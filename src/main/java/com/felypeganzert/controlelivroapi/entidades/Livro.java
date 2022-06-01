@@ -23,7 +23,7 @@ public class Livro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
-    private UUID id;
+    private int id;
 
     @Column(nullable = false)
     private String titulo;
