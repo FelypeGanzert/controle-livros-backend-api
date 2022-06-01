@@ -25,18 +25,22 @@ public class Livro {
     @EqualsAndHashCode.Include
     private int id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
     private String titulo;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
     private String autor;
 
     @Column(nullable = false)
     private int paginas;
     
+    @Column(columnDefinition = "TEXT")
     private String descricao;
 
+    @Column(length = 255)
     private String isbn10;
+    
+    @Column(length = 255)
     private String isbn13;
 
 }
